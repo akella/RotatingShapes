@@ -1,5 +1,5 @@
 node_modules
 dist/
-js
 .cache/
 package-lock.json
+js/lib/
