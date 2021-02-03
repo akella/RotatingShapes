@@ -11,14 +11,26 @@
 body {
 	margin: 0;
 	--color-text: #fff;
-    --color-bg: #0d0e16;
-    --color-link: #85a5e0;
+    --color-bg: #171818;
+    --color-link: #768761;
     --color-link-hover: #666;
 	--font-title: ambroise-firmin-std, serif;
 	color: var(--color-text);
 	background-color: var(--color-bg);
 	font-family: maple-web, sans-serif;
 	-webkit-font-smoothing: antialiased;
+}
+
+.demo-2 {
+    --color-link: #cb7939;
+}
+
+.demo-3 {
+	--color-link: #db4d4d;
+}
+
+.demo-4 {
+	--color-link: #59a8b9;
 }
 
 canvas {
