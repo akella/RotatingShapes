@@ -258,10 +258,10 @@ export default class Sketch {
     let that = this;
     this.settings = {
       progress: 0,
-      distortion: this.DOMdistortion,
+      distortion: parseFloat(this.DOMdistortion),
       shape: this.DOMshape,
       color: this.DOMcolor,
-      speed: this.DOMspeed,
+      speed: parseFloat(this.DOMspeed),
     };
     if(!this.showSettings) return;
     this.gui = new dat.GUI();
