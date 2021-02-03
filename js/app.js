@@ -8,9 +8,11 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import {BufferGeometryUtils} from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import matcapSoul from '../img/soul.jpg';
 import matcapDark from '../img/slate_grey1.jpg';
-import matcapCherry from '../img/food_cherry.png';
-import matcapSpecial from '../img/effect_alien_green.png';
-import matcapAmber from '../img/nature_amber.png';
+import matcapCherry from '../img/food_cherry.jpg';
+import matcapSpecial from '../img/effect_alien_green.jpg';
+import matcapAmber from '../img/nature_amber.jpg';
+import matcapStone from '../img/stone_alabaster.jpg';
+import matcapObsidian from '../img/stone_obsidian_dull.jpg';
 // import {RoundedBoxBufferGeometry} from './round.js'
 // var RoundedBoxGeometry = require('three-rounded-box')(THREE);
 import fragment from "./shader/fragment.glsl";
@@ -247,6 +249,8 @@ export default class Sketch {
       "dark": new THREE.TextureLoader().load(matcapDark),
       "special": new THREE.TextureLoader().load(matcapSpecial),
       "amber": new THREE.TextureLoader().load(matcapAmber),
+      "stone": new THREE.TextureLoader().load(matcapStone),
+      "obsidian": new THREE.TextureLoader().load(matcapObsidian),
     }
   }
 
@@ -290,7 +294,9 @@ export default class Sketch {
       "dark", 
       "cherry", 
       "special", 
-      "amber", 
+      "amber",
+      "stone",
+      "obsidian"
     ])
     .onFinishChange(function (value) {
       that.switchMatcap(value);
