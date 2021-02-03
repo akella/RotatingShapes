@@ -1,21 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<style>
-		*{margin:0;padding:0} 
-		canvas{display: block}
-		#container{width: 100vw;height: 100vh}
-    </style>
-</head>
-<body>
-	<div id="container" 
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rotating Loading Animation of 3D Shapes | Demo 1 | Codrops</title>
+		<meta name="description" content="Rotating Loading Animation of 3D Shapes with Three.js" />
+		<meta name="keywords" content="three.js, webgl, animation, loading, 3d, rotation, twisted" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/pcv4xiq.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="demo-3">
+		<div class="frame">
+			<h1 class="frame__title">Rotating Loading Animation of 3D Shapes</h1>
+			<div class="frame__demos">
+				<span class="frame__demos-text">More demos:</span>
+				<a class="frame__demo" href="index.html">Plus</a>
+				<a class="frame__demo" href="sphube.html">Sphube</a>
+				<a class="frame__demo frame__demo--current" href="torus.html">Torus</a>
+				<a class="frame__demo" href="config.html">Config</a>
+			</div>
+			<div class="frame__links">
+				<a href="https://tympanus.net/Tutorials/WebGLBlobs/">Previous demo</a>
+				<a href="https://tympanus.net/codrops/?p=53254">Article</a>
+				<a href="https://github.com/codrops/RotatingShapes/">GitHub</a>
+			</div>
+		</div>
+		<div id="container" 
 		data-shape="torus" 
 		data-distortion="4" 
 		data-color="cherry" 
-		data-speed="1"
-	></div>
-	<script src="js/app.js"></script>
-</body>
+		data-speed="1"></div>
+		<script src="js/app.js"></script>
+	</body>
 </html>
