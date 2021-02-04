@@ -1,7 +1,3 @@
-// @todo
-// - save videos!
-// - create separate demos!
-
 import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
@@ -14,7 +10,6 @@ import matcapAmber from '../img/nature_amber.jpg';
 import matcapStone from '../img/stone_alabaster.jpg';
 import matcapObsidian from '../img/stone_obsidian_dull.jpg';
 // import {RoundedBoxBufferGeometry} from './round.js'
-// var RoundedBoxGeometry = require('three-rounded-box')(THREE);
 import fragment from "./shader/fragment.glsl";
 import vertex from "./shader/vertex.glsl";
 import * as dat from "dat.gui";
